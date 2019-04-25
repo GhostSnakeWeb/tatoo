@@ -1,6 +1,35 @@
 .heading {
-	font-size: 48px;
+	font-size: 32px;
 	font-weight: 900;
-	line-height: 80px;
-	margin-bottom: 35px;
+	line-height: 40px;
+	margin-bottom: 20px;
+	// От 768px и более
+	@media (min-width: 768px) {
+		font-size: 40px;
+		line-height: 80px;
+	}
+	@media (min-width: 1200px) {
+		font-size: 48px;
+		line-height: 80px;
+		margin-bottom: 35px;
+	}
+}
+.heading--large-mb {
+	margin-bottom: 50px;
+	@media (min-width: 1200px) {
+		margin-bottom: 88px;
+	}
+}
+.subtitile_text {
+	font-size: 16px;
+	line-height: 1.3;
+	margin-bottom: 20px;
+	
+	@media (min-width: 768px) {
+		font-size: 18px;
+		margin-bottom: 45px;
+	}
+	@media (min-width: 1200px) {
+		margin-bottom: 45px;
+	}
 }

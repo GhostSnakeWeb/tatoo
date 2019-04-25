@@ -1,57 +1,65 @@
+ul, li {
+	padding: 0;
+	margin: 0;
+}
 .slider {
+	width: 100%;
+    height: 100%;
 }
-.text {
-	color: #FFF;
-	margin: auto 0;
-	padding-left: 50px;
+.viewport {
+    height: 100%;
+	width: 100%;
+    display: table;
+    position: relative;
+    overflow: hidden;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
 }
-.text__title {
-	font-size: 65px;
-	font-weight: 900;
-	font-style: italic;
-	line-height: 1.3;
-	text-transform: uppercase;
+.sliderwprapper {
+    position: relative;
+    width: calc(100% * 3);
+    top: 0;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    -webkit-transition: 1s;
+    -o-transition: 1s;
+    transition: 1s;
+    -webkit-transition-timing-function: ease-in-out;
+    -o-transition-timing-function: ease-in-out;
+    transition-timing-function: ease-in-out;
 }
-.text__subtitle {
-	font-size: 22px;
-	font-weight: 900;
-	font-style: italic;
-	line-height: 1;
-	text-transform: uppercase;
-	margin-bottom: 18px;
+.slide {
+	width: calc(100%/3);
+    list-style: none;
+    display: inline;
+    float: left;
+    height: 100%;
 }
-.text__sub-subtitle {
-	text-align: center;
-	text-transform: lowercase;
-	font-size: 22px;
-	line-height: 1;
-	position: relative;
-	&:after {
-		content: "";
-	    display: block;
-	    width: 33%;
-	    position: absolute;
-	    border-bottom: 3px solid #fff;
-	    top: 50%;
-	    left: 0;
-	}
-	&:before {
-		content: "";
-	    display: block;
-	    width: 33%;
-	    position: absolute;
-	    border-bottom: 3px solid #fff;
-	    top: 50%;
-	    right: 0;
-	}
+.btns {
+    text-align: center;
+    position: absolute;
+    bottom: 52px;
+    left: 50%;
+    transform: translateX(-50%);
 }
-.picture {
-	img {
-		-webkit-filter: grayscale(100%);
-		-moz-filter: grayscale(100%);
-		-ms-filter: grayscale(100%);
-		-o-filter: grayscale(100%);
-		filter: grayscale(100%);
-		filter: gray; /* IE 6-9 */
-	}
+.slide-nav {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin-right: 5px;
+    &:last-child {
+        margin-right: 0;
+    }
+    border-radius: 50%;
+    border: 1px solid #fff;
+}
+.slide-nav {
+    cursor: pointer;
+}
+.active {
+    background-color: #fff;
 }

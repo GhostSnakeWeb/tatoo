@@ -37,59 +37,126 @@
 	<![endif]-->
 	<!-- header -->
 	<div class="header">
-		<div class="container">
-			<div class="navigation">
-				<div class="menu-block">
-					<a href="#" class="menu-block__logo">
-						<img src="img/logo/logo.png" alt="Лого">
-						<div class="menu-block__logo-name">AMZ TATOO</div>
-					</a>
-					<nav class="menu-block__nav">
-						<ul>
-							<li><a href="#">О нас</a></li>
-							<li><a href="#">Портфолио</a></li>
-							<li><a href="#">Этапы работы</a></li>
-							<li><a href="#">Команда</a></li>
-							<li><a href="#">Цены</a></li>
-						</ul>
-					</nav>
-				</div>
-				<div class="appointment">
-					<a href="#" class="appointment__email">
-						<img src="img/icons/email.png" alt="email-icon">
-						Написать нам
-					</a>
-					<!-- <a href="#" class="appointment__phone">
-						<img src="img/icons/speech-bubble.png" alt="email-icon">
-						+7 (495) 223456
-					</a> -->
-					<a href="#" class="appointment__btn">
-						Записаться на сеанс
-					</a>
+		<div class="navigation">
+			<div class="menu-block">
+				<a href="#" class="menu-block__logo">
+					<img src="img/logo/logo.png" alt="Лого">
+					<div class="menu-block__logo-name">AMZ TATOO</div>
+				</a>
+				<nav class="menu-block__nav">
+					<button id="menu-block__nav-button" class="cmn-toggle-switch cmn-toggle-switch__htx">
+					  <span>toggle menu</span>
+					</button>
+					<ul class="menu-block__nav-list">
+						<li><a href="#about">О нас</a></li>
+						<li><a href="#portfolio">Портфолио</a></li>
+						<li><a href="#stages">Этапы работы</a></li>
+						<li><a href="#team">Команда</a></li>
+						<!-- <li><a href="#">Цены</a></li> -->
+					</ul>
+				</nav>
+			</div>
+			<div class="appointment">
+				<a href="mailto:email" class="appointment__email">
+					<img src="img/icons/email.png" alt="email-icon">
+					Написать нам
+				</a>
+				<a href="tel:+7(495)223456" class="appointment__phone">
+					<img src="img/icons/speech-bubble.png" alt="email-icon">
+					+7 (495) 223456
+				</a>
+				<a href="#" class="appointment__btn">
+					Записаться на сеанс
+				</a>
+			</div>
+		</div>
+		<!-- slider -->
+	   	<div class="slider">
+	   		<div class="viewport">
+	   			<ul class="sliderwprapper">
+					<li class="slide">
+						<div class="slider-item">
+							<div class="container h-100">
+								<div class="row h-100">
+									<div class="col-lg-6 col-xl-7 text">
+										<p class="text__title">Лучшие в рейтинге цены и качества</p>
+										<p class="text__subtitle">От разработки эскиза к безупречной татуировке</p>
+										<p class="text__sub-subtitle">При заказе от 4999р</p>
+									</div>
+									<div class="d-none d-lg-block col-lg-6 col-xl-5 picture">
+										<div class="picture__man h-100"></div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li class="slide">
+						<div class="slider-item">
+							<div class="container h-100">
+								<div class="row h-100">
+									<div class="col-lg-6 col-xl-7 text">
+										<p class="text__title">Лучшие в рейтинге цены и качества</p>
+										<p class="text__subtitle">От разработки эскиза к безупречной татуировке</p>
+										<p class="text__sub-subtitle">При заказе от 4999р</p>
+									</div>
+									<div class="d-none d-lg-block col-lg-6 col-xl-5 picture">
+										<div class="picture__man h-100"></div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li class="slide">
+						<div class="slider-item">
+							<div class="container h-100">
+								<div class="row h-100">
+									<div class="col-lg-6 col-xl-7 text">
+										<p class="text__title">Лучшие в рейтинге цены и качества</p>
+										<p class="text__subtitle">От разработки эскиза к безупречной татуировке</p>
+										<p class="text__sub-subtitle">При заказе от 4999р</p>
+									</div>
+									<div class="d-none d-lg-block col-lg-6 col-xl-5 picture">
+										<div class="picture__man h-100"></div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</li>
+				</ul>
+				<div class="btns">
+					<div class="slide-nav active"></div>
+					<div class="slide-nav"></div>
+					<div class="slide-nav"></div>
 				</div>
 			</div>
-			<div class="slider">
-				<div class="row">
-					<div class="col-8 text">
+	   	</div>
+		<!-- slider -->
+		<div class="roll-down">
+			<div class="roll-down__text">Крутите&nbsp;вниз</div>
+		</div>
+		<!-- <div class="slider-item">
+			<div class="container h-100">
+				<div class="row h-100">
+					<div class="col-7 text">
 						<p class="text__title">Лучшие в рейтинге цены и качества</p>
 						<p class="text__subtitle">От разработки эскиза к безупречной татуировке</p>
 						<p class="text__sub-subtitle">При заказе от 4999р</p>
 					</div>
-					<div class="col-4 picture">
-						<img src="img/slider/1.png" alt="">
+					<div class="col-5 picture">
+						<div class="picture__man h-100"></div>
 					</div>
 				</div>
 			</div>
-		</div>
+		</div> -->
 	</div>
 	<!-- // header -->
 	
 	<!-- advantages -->
-	<div class="advantages">
+	<div id="about" class="advantages section">
 		<div class="container">
 			<!-- описание -->
 			<div class="row">
-				<div class="col-6 offset-3 text-center">
+				<div class="col-lg-6 offset-lg-3 text-center">
 					<div class="heading">Почему выбирают нас</div>
 					<p class="subtitile_text">
 						Все услуги нашей студии оказываются профессионалами
@@ -101,18 +168,26 @@
 			<!-- // описание -->
 			<!-- преимущества -->
 			<div class="row">
-				<div class="col-4">
-					<div class="advantage">
+				<div class="col-md-4">
+					<div class="advantage advantage--women">
 						<div class="advantage__number">8920</div>
 						<div class="advantage__desc">татуировок сделали наши мастера</div>
-						<div class="advantage__btn">Подробнее</div>
+						<a href="#" class="advantage__btn">Подробнее</a>
 					</div>
 				</div>
-				<div class="col-4">
-					<div class="block">Карточка 2</div>
+				<div class="col-md-4">
+					<div class="advantage advantage--man">
+						<div class="advantage__number">12</div>
+						<div class="advantage__desc">мастеров высочайшего уровня</div>
+						<a href="#" class="advantage__btn">Подробнее</a>
+					</div>
 				</div>
-				<div class="col-4">
-					<div class="block">Карточка 3</div>
+				<div class="col-md-4">
+					<div class="advantage advantage--work-place">
+						<div class="advantage__number">100%</div>
+						<div class="advantage__desc advantage__desc--small-padding">стерильность помещения и оборудования</div>
+						<a href="#" class="advantage__btn">Подробнее</a>
+					</div>
 				</div>
 			</div>
 			<!-- // преимущества -->
@@ -121,100 +196,175 @@
 	<!-- // advantages -->
 
 	<!-- Our works -->
-	<div class="works block-bg">
+	<div id="portfolio" class="works section">
 		<div class="container">
-			<div class="block">Наши работы</div>
-			<div class="block">Описание</div>
 			<div class="row">
-				<div class="col-4">
-					<div class="block">Работа 1</div>
-				</div>
-				<div class="col-4">
-					<div class="block">Работа 2</div>
-				</div>
-				<div class="col-4">
-					<div class="block">Работа 3</div>
+				<div class="col-lg-6 offset-lg-3 text-center">
+					<div class="heading">Наши работы</div>
+					<p class="subtitile_text">Главная цель мастера - передать не только картинку, но и задумку, особенности<br> и эмоции человека.</p>
 				</div>
 			</div>
-			<div class="row">
-				<div class="col-4">
-					<div class="block">Работа 4</div>
+			<div class="row mb-57">
+				<div class="col-md-4 mb-47">
+					<img class="work-img" src="img/works/work1.jpg" alt="Работа 1">
 				</div>
-				<div class="col-4">
-					<div class="block">Работа 5</div>
+				<div class="col-md-4 mb-47">
+					<img class="work-img" src="img/works/work2.jpg" alt="Работа 2">					
 				</div>
-				<div class="col-4">
-					<div class="block">Работа 6</div>
+				<div class="col-md-4 mb-47">
+					<img class="work-img" src="img/works/work3.jpg" alt="Работа 3">
+				</div>
+				<div class="col-md-4">
+					<img class="work-img" src="img/works/work4.jpg" alt="Работа 4">
+				</div>
+				<div class="col-md-4">
+					<img class="work-img" src="img/works/work5.jpg" alt="Работа 5">
+				</div>
+				<div class="col-md-4">
+					<img class="work-img" src="img/works/work6.jpg" alt="Работа 6">
 				</div>
 			</div>
-			<div class="block">Кнопка</div>
+			<div class="text-center">
+				<a href="#" class="works-btn">
+					<span>Открыть галлерею</span>
+					<div class="right-chevron">
+						<i class="fa fa-angle-right fa-2x" aria-hidden="true"></i>
+					</div>
+				</a>
+			</div>
 		</div>
 	</div>
 	<!-- // Our works -->
 
 	<!-- How we works -->
-	<div class="works block-bg">
+	<div id="stages" class="work-scheme section">
 		<div class="container">
-			<div class="block">Как мы работаем</div>
-			<div class="block">Описание</div>
+			<div class="col-lg-6 offset-lg-3 text-center">
+				<div class="heading heading--large-mb">Как мы работаем</div>
+			</div>
 			<div class="row">
-				<div class="col-4">
-					<div class="block">1</div>
+				<div class="service col-md-4">
+					<div class="service__num"><span>1</span></div>
+					<div class="service__title">Заявка на сайте или по телефону</div>
+					<div class="service__desc">
+						<p>Мы воплотим любую вашу идею 
+						татуировки в жизнь.</p>
+						<p>Оставьте заявку и мы 
+						перезвоним вам в течение 15 минут.</p>
+					</div>
 				</div>
-				<div class="col-4">
-					<div class="block">2</div>
+				<div class="service col-md-4">
+					<div class="service__num"><span>2</span></div>
+					<div class="service__title">Разработка уникального эскиза</div>
+					<div class="service__desc">
+						Далее мастер приступает к созданию 
+						индивидуального эскиза татуировки 
+						по вашей задумке и утверждает 
+						его с вами.
+					</div>
 				</div>
-				<div class="col-4">
-					<div class="block">3</div>
+				<div class="service col-md-4">
+					<div class="service__num"><span>3</span></div>
+					<div class="service__title">Сеанс татуировки и итоговая оплата</div>
+					<div class="service__desc">
+						В стерильной студии и с 
+						использованием лучшего 
+						оборудования вы получаете 
+						качественную татуировку.
+					</div>
 				</div>
 			</div>
 		</div>
 	</div>
 	<!-- // How we works -->
 
-	<!-- appointment -->
-	<div class="works block-bg">
+	<!-- form -->
+	<div class="form section section--form">
 		<div class="container">
-			<div class="block">Форма</div>
-			<div class="block">PS</div>
+			<form id="contact-form" class="contact-form" action="">
+				<div class="for-flex">
+					<label for="name">Ваше имя</label>
+					<input id="name" type="text" class="contact-form__input" name="name" placeholder="Имя">
+				</div>
+				<div class="for-flex">
+					<label for="phone">Телефон</label>
+					<input id="phone" type="text" class="contact-form__input" name="phone" placeholder="Телефон">
+				</div>
+				<input type="submit" class="contact-form__submit" name="signUp" value="Записаться">
+			</form>
+			<p class="agreement">Нажимая на кнопку, вы даете согласие на обработку персональных данных и соглашаетесь c политикой конфиденциальности.</p>
 		</div>
 	</div>
-	<!-- // appointment -->
+	<!-- // form -->
 
 	<!-- Our team -->
-	<div class="works white-bg">
+	<div id="team" class="team section section--team">
 		<div class="container">
-			<div class="block">Наша команда</div>
-			<div class="block">Описание</div>
+			<div class="col-lg-6 offset-lg-3 text-center">
+				<div class="heading">Наша команда</div>
+				<p class="subtitile_text">Искусство предполагает чувства за творчеством, а татуировка несет эти чувства через всю жизнь. Именно поэтому татуировку можно назвать искусством в его чистом виде.</p>
+			</div>
 			<div class="row">
-				<div class="col-4">
-					<div class="block">Макс</div>
+				<div class="team-member col-lg-4">
+					<img class="team-member__photo" src="img/team/max.jpg" alt="Максим Хорламов">
+					<div class="col-xl-9 p-0 team-member__name">Максим Хорламов</div>
+					<div class="col-sm-9 p-0 team-member__desc">
+						Макс специализируется на 
+						татуировках в стиле реализм, 
+						качественно и быстро 
+						исполняя масштабные работы.
+					</div>
 				</div>
-				<div class="col-4">
-					<div class="block">Петр</div>
+				<div class="team-member col-lg-4">
+					<img class="team-member__photo" src="img/team/peter.jpg" alt="Петр Герасимов">
+					<div class="col-xl-9 p-0 team-member__name">Петр Герасимов</div>
+					<div class="col-md-9 p-0 team-member__desc">
+						Основная масса работ Петра - 
+						это татуировки в стиле 
+						black&gray, а также графика и 
+						кавер-ап в реализме.
+					</div>
 				</div>
-				<div class="col-4">
-					<div class="block">Анна</div>
+				<div class="team-member col-lg-4">
+					<img class="team-member__photo" src="img/team/anna.jpg" alt="Анна Ильина">
+					<div class="col-xl-9 p-0 team-member__name">Анна Ильина</div>
+					<div class="col-md-9 p-0 team-member__desc">
+						Анна - специалист пирсинга и 
+						микродермала, имеющий 
+						медицинское образование и 3 
+						года успешного опыта работы.
+					</div>
 				</div>
 			</div>
 		</div>
 	</div>
 	<!-- // Our team -->
 
-	<div class="footer block-bg">
-		<div class="container">
-			<div class="d-flex justify-content-between">
-				<div class="block">Лого</div>
-				<div class="block">Политика</div>
-				<div class="block">Соц иконки</div>
+	<div class="footer section section--footer">
+		<div class="container footer-display">
+			<a href="#" class="menu-block__logo menu-block__logo--footer">
+				<div class="menu-block__logo-name">AMZ TATOO</div>
+			</a>
+			<a href="#" class="privacy-policy">
+				Политика конфиденциальности
+			</a>
+			<div class="social-icons">
+				<a href="#"><i class="fab fa-twitter"></i></a>
+				<a href="#"><i class="fab fa-instagram"></i></a>
+				<a href="#"><i class="fab fa-vk"></i></a>
 			</div>
 		</div>
 	</div>	
 
-
+	<!-- Vendor scripts -->
 	<script src="libs/jquery/jquery-3.4.0.min.js"></script>
 	<script src="libs/bootstrap/js/bootstrap.min.js"></script>
-	<script src="js/main.js"></script>
+	<!-- <script src="libs/validate/validate.js"></script> -->
+	<script src="libs/maskedinput/maskedinput.min.js"></script>
 
+	<!-- Custom scripts -->
+	<script src="js/navigation.js"></script>
+	<script src="js/slider.js"></script>
+	<script src="js/main.js"></script>
 </body>
 </html>
