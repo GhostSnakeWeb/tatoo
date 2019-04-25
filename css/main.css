@@ -708,6 +708,8 @@ li {
     -webkit-flex-direction: row;
     -ms-flex-direction: row;
     flex-direction: row;
+    -webkit-align-items: center;
+    align-items: center;
     -webkit-justify-content: center;
     justify-content: center;
     margin-bottom: 28px;
@@ -735,7 +737,6 @@ label {
   border: 2px solid #F7F7F7;
   background-color: #F7F7F7;
   outline: none;
-  margin-right: 103px;
   margin-bottom: 20px;
 }
 .contact-form__input:focus {
@@ -781,10 +782,28 @@ label {
     margin-bottom: 0;
   }
 }
-.submit-flex {
-  display: flex;
-  -webkit-align-items: flex-end;
-  align-items: flex-end;
+label.error {
+  background-color: #e01a11;
+  display: block;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+  color: #FFF;
+  padding: 5px 15px;
+  margin-top: 3px;
+  margin-bottom: 20px;
+}
+@media (min-width: 992px) {
+  label.error {
+    margin-top: 8px;
+    margin-bottom: 0;
+  }
+}
+@media (min-width: 1200px) {
+  .submit-flex {
+    display: flex;
+    -webkit-align-items: center;
+    align-items: center;
+  }
 }
 .agreement {
   font-size: 16px;
@@ -793,6 +812,16 @@ label {
   text-align: center;
   margin: 0;
   padding: 0;
+}
+@media (min-width: 992px) {
+  .for-flex {
+    margin-right: 50px;
+  }
+}
+@media (min-width: 1200px) {
+  .for-flex {
+    margin-right: 103px;
+  }
 }
 .header {
   position: relative;

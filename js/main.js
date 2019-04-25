@@ -15,4 +15,11 @@ $(document).ready(function() {
 	$(function(){
 	  $("#phone").mask("+7(999) 999-99-99");
 	});
+
+	// Тупой фикс кнопки
+	// if (document.documentElement.clientWidth > 1200) {
+	// 	$('.contact-form__submit').click(function(event) {
+	// 		$('.submit-flex').addClass('submit-flex--aicenter');
+	// 	});
+	// }
 });
