@@ -386,6 +386,12 @@ li {
   -o-transition-timing-function: ease-in-out;
   transition-timing-function: ease-in-out;
 }
+.sliderwprapper:hover {
+  cursor: url("../img/icons/Grab.cur"), move;
+}
+.cursor-active {
+  cursor: url("../img/icons/Grabbing.cur"), move !important;
+}
 .slide {
   width: calc(33.33333333%);
   list-style: none;
