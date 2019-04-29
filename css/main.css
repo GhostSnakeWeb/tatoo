@@ -694,8 +694,8 @@ li {
 }
 @media (min-width: 576px) {
   .section--footer {
-    padding-top: 6px;
-    padding-bottom: 6px;
+    padding-top: 26px;
+    padding-bottom: 26px;
   }
 }
 .form {
@@ -1210,9 +1210,16 @@ label.error {
   }
 }
 .privacy-policy {
+  margin-top: 20px;
+  margin-bottom: 20px;
   font-size: 18px;
-  line-height: 4.444;
   font-weight: 900;
+}
+@media (min-width: 576px) {
+  .privacy-policy {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
 }
 .social-icons {
   display: flex;
