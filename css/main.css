@@ -822,6 +822,7 @@ label.error {
 @media (min-width: 992px) {
   .for-flex {
     margin-right: 50px;
+    padding-bottom: 35px;
   }
 }
 @media (min-width: 1200px) {
